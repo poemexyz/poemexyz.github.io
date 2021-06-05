@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Poeme</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-heading">
+			<!-- <img class="nav-icon" src=""></img> -->
+			<h1 class="heading">Poeme</h1>
+		</div>
+	</nav>
+	<div class="container">
+		<div id="loader" class="sk-folding-cube">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>
+		<div id="wrapper" class="wrapper invisible">
+			<div class="btn-container recite">
+				<a id="recite-btn" class="btn-push colored" target="_blank">Recite</a>
+			</div>
+			<div class="card">
+				<p class="poem-name" id="poemName"></p>
+				<p class="poem" id="poem"></p>
+				<p class="poem-author" id="poemAuthor">&#8212; </p>
+			</div>
+			<div class="btn-container next">
+				<a class="btn-push colored" onclick="location.reload();">Next</a>
+			</div>
+		</div>
+	</div>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
