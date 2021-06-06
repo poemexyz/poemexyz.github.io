@@ -47,7 +47,6 @@ const say = (m) => {
 
 const recite = (id) => {
 	window.speechSynthesis.cancel();
-	const SERVER_URL = "http://localhost:5000/api/getPoem"
 	let lines;
 	fetch(`${SERVER_URL}/${id}`)
 	.then(response=>response.json())
